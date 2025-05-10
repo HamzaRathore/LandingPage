@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  padding: 50px 20px;
+  background-image: radial-gradient(
+    circle 250px at 700px 450px,
+    rgba(144, 215, 243, 0.3),
+    rgba(119, 119, 255, 0.2),
+    transparent
+  );
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px;
+ }
+
+.headBox {
+  background: #000;
+  grid-column: span 2;
+  color: #fff;
+  padding: 38px 38px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+.headBox h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  line-height: 64px;
+ 
+}
+
+.headImg {
+  position: relative;
+  top: 93px;
+  left: 25px;
+}
+
+.ctaButton {
+  background-color: #caef45;
+  color: #000;
+  padding: 20px 32px 20px 48px;
+  border-radius: 36px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  
+}
+
+.ctaButton:hover {
+  background: #eee;
+}
+
+.card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 10px;
+ 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 280px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16.59px;
+  line-height: 28px;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+  border-radius: 22px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    background-image: radial-gradient(
+      circle 150px at center,
+      rgba(144, 215, 243, 0.3),
+      rgba(119, 119, 255, 0.2),
+      transparent
+    );
+  }
+
+  .headBox {
+    grid-column: span 1;
+    padding: 20px;
+  }
+
+  .headBox h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ctaButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .headImg {
+    top: 30px;
+    left: 10px;
+    width: 120px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 982px) {
+  .headBox {
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .card {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1298px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 773px) {
+  .headImg {
+    display: none;
+  }
+}
+
+@media (min-width: 774px) {
+  .headImg {
+    display: block;
+  }
+}

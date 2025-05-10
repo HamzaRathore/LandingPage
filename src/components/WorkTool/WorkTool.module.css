@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  height: 216px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+}
+.headingContainer {
+  height: 128px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 53.05px;
+  font-weight: 600;
+  color: black;
+
+  margin: 0;
+  padding: 0;
+  line-height: -1.12px;
+}
+.txt {
+  width: 638px;
+  height: 128px;
+  max-width: 680px;
+}
+.ctaButton {
+  background-color: #000;
+  color: white;
+  height: 64px;
+  width: 285.77px;
+  padding: 20px 32px 20px 48px;
+  border-radius: 36px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  align-self: center;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  filter: brightness(0) invert(1);
+}
+.toolGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.toolItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toolItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.toolLogo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.toolName {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .toolGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .toolGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .heading h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .headingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .txt {
+    width: 100%; /* Full width for better centering */
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolGrid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 60px 15px;
+  }
+}
+

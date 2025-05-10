@@ -1,0 +1,186 @@
+.container {
+    width: 100%;
+    max-width: 838px;
+    margin: 128px auto 0 auto;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 838px;
+    gap: 14px;
+}
+
+.heading {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    color: #0f1311;
+    /* width: 862px; */
+    margin: 0px;
+    /* font-size: 72px; */
+        /* line-height: 88px; */
+        width: 100%;
+        max-width: 1000px;
+}
+
+.subHeading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #474650;
+    width: 680px;
+}
+
+.btn {
+    height: 56px;
+    width: 291px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.DashboardImages {
+    position: relative;
+    padding-top: 75px;
+}
+.dashboard{
+    overflow: hidden;
+}
+
+.DashboardImages img:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.imgRight {
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    bottom: 6px;
+}
+
+.imgLeft {
+    position: absolute;
+    right: 640px;
+    z-index: 1;
+    bottom: 6px;
+}
+
+/*  For Large screens */
+@media (min-width: 1281px) {
+    .heading {
+        font-size: 72px;
+        line-height: 88px;
+        width: 108%;
+        max-width: 1000px;
+    }
+
+    .subHeading {
+        font-size: 28px;
+        line-height: 40px;
+        width: 100%;
+        max-width: 850px;
+    }
+
+    .textBoard {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+/*  For mid screens (768px to 1194px) */
+@media (max-width: 1194px) and (min-width: 768px) {
+    .DashboardImages img:first-child {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .textBoard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .subHeading {
+        width: 100%;
+    }
+}
+
+/*  For tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 48px;
+        line-height: 60px;
+        width: 100%;
+    }
+
+    .subHeading {
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .textBoard {
+        width: 100%;
+    }
+}
+
+/*  For small screens (below 767px) */
+@media (max-width: 767px) {
+    .heading {
+        font-size: 36px;
+        line-height: 48px;
+        width: 100%;
+    }
+
+    .subHeading {
+        font-size: 18px;
+        line-height: 26px;
+        width: 100%;
+    }
+
+    .textBoard {
+        width: 100%;
+    }
+    .imgRight,
+    .imgLeft {
+        display: none;
+    }
+
+    
+    .DashboardImages img:first-child {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
