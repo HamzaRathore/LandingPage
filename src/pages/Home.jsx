@@ -9,6 +9,7 @@ import Analysis from '../components/Analysis/Analysis'
 import Features from '../components/Features/Features'
 import CustomerReview from '../components/customerReview/CustomerReview'
 import WorkTool from '../components/WorkTool/WorkTool'
+import Blog from '../components/Blog/Blog'
 
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
      <Features/>
      <CustomerReview/>
      <WorkTool/>
+     <Blog/>
     </>
   )
 }

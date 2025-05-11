@@ -1,200 +1,198 @@
-.container{
-    width: 100%;
-    height: 1520px;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+.container {
+  width: 100%;
+  height: 1520px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section1,
-.section2{
-     height: 680px;
-     width: 1160px;
-     gap: 60px;
-     /* border: 2px solid rgb(212, 21, 21); */
-     display: flex;
-     
-     
-
+.section2 {
+  height: 680px;
+  width: 1160px;
+  gap: 60px;
+  /* border: 2px solid rgb(212, 21, 21); */
+  display: flex;
 }
 .sec1Img {
-    width: 560px;
-    height: 880px;
-    max-width: 560px;
-    /* border: 2px solid rgb(73, 158, 16); */
-    overflow: hidden; 
+  width: 560px;
+  height: 880px;
+  max-width: 560px;
+  /* border: 2px solid rgb(73, 158, 16); */
+  overflow: hidden;
 }
 
 .sec1Img img {
-    width: 100%;         
-    height: 100%;       
-    object-fit: cover;   
-    display: block;     
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 523px;
-    /* border: 2px solid green; */
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 523px;
+  /* border: 2px solid green; */
+  justify-content: center;
+  gap: 20px;
 }
 
 .textContainer h2 {
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 60px;
-    margin: 0;
-    text-align: left; 
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 0;
+  text-align: left;
 }
 
 .textContainer p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 18.59px;
-    line-height: 32px;
-    margin: 0;
-    text-align: left; 
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18.59px;
+  line-height: 32px;
+  margin: 0;
+  text-align: left;
 }
 
 .detail {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    text-align: left; 
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
 }
 
 .inner {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .inner p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
 }
-.sec2Text{
-    display: flex;
-    flex-direction: column;
-     max-width: 523px; 
-    width: 523px;
-    /* border: 2px solid green; */
-    justify-content: center;
-    gap: 20px;
+.sec2Text {
+  display: flex;
+  flex-direction: column;
+  max-width: 523px;
+  width: 523px;
+  /* border: 2px solid green; */
+  justify-content: center;
+  gap: 20px;
 }
-.sec2Text h2{
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 60px;
-    margin: 0;
+.sec2Text h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 0;
 }
-.sec2Text p{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 18.59px;
-    line-height: 32px;
-    margin: 0;
+.sec2Text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18.59px;
+  line-height: 32px;
+  margin: 0;
 }
-.sec2Img{
-    width: 560px;
-    height: 680px;
-    max-width: 560px;
-    /* border: 2px solid rgb(37, 16, 158); */
-    overflow: hidden;
+.sec2Img {
+  width: 560px;
+  height: 680px;
+  max-width: 560px;
+  /* border: 2px solid rgb(37, 16, 158); */
+  overflow: hidden;
 }
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 1.28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 3px;
 }
-.btn:hover{
-    background-color: rgb(218, 216, 216);
+.btn:hover {
+  background-color: rgb(218, 216, 216);
+  width: 180px;
+  border-radius: 10px;
+  padding: 10px 8px 10px 8px;
 }
 
 .btnImg {
-    height: 35px;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 }
 
 /* For tablets and below  */
 @media (max-width: 1024px) {
-    .container {
-      height: auto;
-      padding: 20px;
-      overflow: hidden;
-    }
-  
-    .section1,
-    .section2 {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      gap: 40px;
-      overflow: hidden;
-    }
-  
-    .sec1Img,
-    .sec2Img,
-    .textContainer,
-    .sec2Text {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border: none;
-    }
-  
-    .textContainer h2,
-    .sec2Text h2 {
-      font-size: 32px;
-      line-height: 44px;
-    }
-  
-    .textContainer p,
-    .sec2Text p {
-      font-size: 16px;
-      line-height: 28px;
-    }
-  
-    .btnImg {
-      height: 28px;
-      width: 28px;
-    }
+  .container {
+    
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
   }
-  
-  /* For large desktop screens  */
-  @media (min-width: 1440px) {
-    .section1,
-    .section2 {
-      width: 1320px;
-    }
-  
-    .textContainer,
-    .sec2Text {
-      max-width: 600px;
-    }
-  
-    .sec1Img,
-    .sec2Img {
-      width: 660px;
-      height: auto;
-    }
+
+  .section1,
+  .section2 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    overflow: hidden;
   }
-  
+
+  .sec1Img,
+  .sec2Img,
+  .textContainer,
+  .sec2Text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .textContainer h2,
+  .sec2Text h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .textContainer p,
+  .sec2Text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .btnImg {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+/* For large desktop screens  */
+@media (min-width: 1440px) {
+  .section1,
+  .section2 {
+    width: 1320px;
+  }
+
+  .textContainer,
+  .sec2Text {
+    max-width: 600px;
+  }
+
+  .sec1Img,
+  .sec2Img {
+    width: 660px;
+    height: auto;
+  }
+}
