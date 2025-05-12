@@ -45,6 +45,7 @@ const CustomerRating = () => {
       data-aos-delay="200"
       className={styles.container}
     >
+      <div className={styles.subcontainer}>
       <div className={styles.textContainer}>
         <h2>
           Customers have consistently <br /> rated milestone 4.9/5
@@ -58,6 +59,7 @@ const CustomerRating = () => {
             <img src={review.src} alt={review.alt} className={styles.logo} />
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

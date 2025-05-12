@@ -1,33 +1,40 @@
 .container {
     width: 100%;
-    padding: 80px 140px 0;
+    padding: 9.72vw 9.57vw 0.017vw 9.58vw;
     background: white;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-}
+    align-items: center;
+    gap: 0.69vw;
+  }
   
   .subcontainer {
-    width: 1165px;
-    max-width: 1165px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 68px;
-    border: 2px solid rgb(189, 27, 27);
+    width: 80.90vw;
+    /* max-width: 80.90vw; */
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4.72vw;
     margin-bottom: 60px;
   }
   
-  .section1 {
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    flex: 1 1 220px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
   
   .logo {
     display: flex;
     flex-direction: column;
-    width: 300px;
     gap: 10px;
+    max-width: 300px;
   }
   
   .logo img {
@@ -37,7 +44,6 @@
   
   .logo p {
     font-family: "Inter", sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #333;
@@ -50,10 +56,7 @@
   }
   
   .socialIcons h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 22px;
     letter-spacing: 1.12px;
     text-transform: uppercase;
     color: #333;
@@ -65,7 +68,7 @@
   }
   
   .iconImg {
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     border-radius: 20px;
     height: 40px;
     width: 40px;
@@ -88,32 +91,31 @@
   .navs {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px; 
   }
-  
   .navs h2 {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 22px;
     letter-spacing: 1.12px;
     text-transform: uppercase;
-    
-    /* margin-bottom: 5px; */
   }
+  
+ 
+  
   .navs a {
     text-decoration: none;
-    height: 35px;
+    height: 30px; 
+    display: block;
   }
+  
   .navs p {
+    margin: 0; /* remove any default margins */
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px; /* smaller if you prefer */
+    line-height: 22px;
     color: black;
     cursor: pointer;
     transition: all 0.3s ease;
-    
   }
   
   .navs p:hover {
@@ -122,155 +124,134 @@
   
   .newsletter {
     display: flex;
-    width: 376px;
-    height: 22.25px;
-    padding-right: 115.88px;
-    padding-bottom: 0.25px;
     flex-direction: column;
     gap: 15px;
+    max-width: 376px;
   }
   
   .newsletter h2 {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
     font-size: 13px;
-    line-height: 22px;
     letter-spacing: 1.12px;
     text-transform: uppercase;
-    color: #000000;
+    color: #000;
   }
   
   .newsletter p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
     font-size: 14.75px;
-    line-height: 24px;
-    color: #000000;
-    
+    color: #000;
   }
   
   .emailInput {
     display: flex;
-    align-items: center;
-   
-    padding-bottom: 5px;
-    
-    height: 19.4px;
-    width: 306px;
     gap: 8px;
+    align-items: center;
+    width: 100%;
   }
   
   .emailInput input {
     flex: 1;
-    width: 300px;
     height: 56px;
-    max-width: 300px;
     border-radius: 32px;
-
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     border: none;
     outline: none;
-    font-family: "Inter", sans-serif;
     font-size: 16px;
-    padding: 17.25px 12px 17.25px 24px;
+    padding: 17.25px 24px;
   }
   
   .emailInput input::placeholder {
-    color: #000000B2;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    color: #000000b2;
     font-size: 14.75px;
-    line-height: 100%;
-    letter-spacing: 0;
   }
   
   .emailInput button {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 20px;
-    padding: 0 5px;
+    padding: 0;
   }
   
-  .btn{
+  .btn {
     width: 56px;
     height: 56px;
     border-radius: 28px;
-    background-color: #000000;
+    background-color: #000;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
   }
+  
   .btn button {
-    /* all: unset; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-  }
- 
-  .copyright {
-    width: 100%;
-    height: 46px;
-    max-width: 1280px;
-    padding: 10px 411.33px 10px 411.33px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .copyright {
+    width: 100%;
     text-align: center;
-    background-color: #F2F4F7;
+    padding: 10px 20px;
+    background-color: #f2f4f7;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
   
   .copyright p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
     font-size: 14.88px;
     color: #212121;
   }
   
-  /* Tablet(768px and up) */
-@media (min-width: 768px) {
+  /* Medium screens (tablets) */
+  @media (max-width: 1024px) {
     .container {
       padding: 60px 40px 0;
     }
-    
+  
     .subcontainer {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px 20px;
-      overflow: hidden;
+      justify-content: center;
+    }
+  
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+      flex: 1 1 45%;
     }
   }
   
-  /* Desktop (1024px and up) */
-  @media (min-width: 1024px) {
+  /* Small screens (mobiles) */
+  @media (max-width: 768px) {
     .container {
-      padding: 80px 60px 0;
+      padding: 40px 20px 0;
     }
-    
+  
     .subcontainer {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
+      flex-direction: column;
+      gap: 32px;
     }
-    
-    .newsletter {
-      width: 376px;
+  
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+      flex: 1 1 100%;
+      align-items: flex-start;
     }
-    
+  
     .emailInput {
-      width: 306px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .emailInput input,
+    .btn {
+      width: 100%;
+    }
+  
+    .emailInput {
+      gap: 12px;
     }
   }
   
-  /* Large desktop(1440px and up) */
-  @media (min-width: 1440px) {
-    .container {
-      padding: 80px 140px 0;
-    }
-  }
-  
- 

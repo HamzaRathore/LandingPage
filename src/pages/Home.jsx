@@ -13,12 +13,13 @@ import Blog from '../components/Blog/Blog'
 import Benefits from '../components/Benefits/Benefits'
 import Footer from '../components/Footer/Footer'
 
-
 function Home() {
   
-
+  console.log(window.innerWidth);
   return (
+    
     <>
+    
      <Navbar/>
      <Banner/>
      <CustomerRating/>

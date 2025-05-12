@@ -49,6 +49,7 @@ const rightlogo = [
 ];
 
 const Benefits = () => {
+  
   return (
     <div className={styles.container}>
       {/* <img className={styles.radiusImg} src={greenRadius} alt="shadow" /> */}
