@@ -1,0 +1,434 @@
+.container {
+  width: 100%;
+  height: 536px;
+  padding: 0px 140px 0px 140px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px;
+  position: absolute;
+}
+/* .radiusImg{
+    position: absolute;
+    height: 162px;
+    width: 154px;
+    right: 160px;
+    bottom: 214px;
+    z-index: 1; 
+    opacity: 0.4; 
+    border-radius: 50%;
+ } */
+.blueradius {
+  position: absolute;
+  height: 333px;
+  width: 346px;
+  right: 720px;
+  bottom: 148px;
+  z-index: 1;
+  opacity: 0.6;
+  filter: drop-shadow(83px -27px 6px rgba(0, 255, 0, 0.8));
+}
+.spiral {
+  position: absolute;
+  height: 165px;
+  width: 283px;
+  right: 330px;
+  bottom: 188px;
+  z-index: 1;
+  opacity: 0.8;
+}
+.subcontainer {
+  width: 1160px;
+  max-width: 1160px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0px 40px 0px;
+  background-color: #000000;
+}
+.header {
+  width: 100%;
+  height: 240px;
+  padding: 0px 240px 0px 80px;
+  gap: 48px;
+}
+.heading {
+  width: 820px;
+  height: 240px;
+  max-width: 820px;
+  padding-right: 25.82px;
+  gap: 1.56px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+.heading h2 {
+  color: white;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.btnSection {
+  height: 72px;
+  width: 650px;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowButton {
+  background-color: #caef45;
+  color: #000;
+  padding: 12px 29px 12px 29px;
+  border-radius: 36px;
+  font-weight: 700;
+  font-size: 15.88px;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.arrow img {
+  padding-top: 6px;
+}
+.arrowButton:hover {
+  background: #eee;
+}
+
+.logos {
+  display: flex;
+  width: 348.99px;
+  height: 69px;
+  min-width: 300px;
+  padding: 3px 3px 0px 3px;
+  color: #c4c4c4;
+  align-items: center;
+}
+.leftlogos {
+  display: flex;
+  flex-direction: column;
+  height: 56.25px;
+  width: 47.02px;
+  align-items: center;
+}
+.leftlogos img {
+  width: 32px;
+  height: 32px;
+  max-width: 34.73px;
+  filter: grayscale(100%);
+}
+.leftlogos p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 9.38px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  opacity: 70%;
+  color: #c4c4c4;
+}
+.breaker {
+  color: white;
+  padding: 5px 10px 0px 10px;
+  height: 29px;
+}
+.animatedSection {
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.sliderTrack:hover {
+  animation-play-state: paused;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 381px;
+  height: 56px;
+  border-radius: 55px;
+  padding: 12px 22.33px;
+  background-color: #212121;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.slider p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+/* For extra small screen */
+@media (max-width: 480px)  {
+    .arrowButton{
+        padding: 8px 19px 8px 19px;
+        font-size: 10.88px;
+      line-height: 22px;
+  letter-spacing: 0.5px;
+  gap: 2px;
+    }
+    .arrow img {
+        padding-top: 3px;
+        height: 22px;
+      }
+ 
+      .btnSection{
+        margin-bottom: 50px;
+      }
+      .slider p{
+        font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0%;
+      }
+  }
+
+/* For mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 0 20px;
+      height: auto;
+      position: relative;
+    }
+  
+    .subcontainer {
+      width: 100%;
+      padding: 40px 0 20px 0;
+      
+    }
+  
+    .header {
+      padding: 0 20px;
+      height: auto;
+      flex-direction: column;
+      gap: 24px;
+      overflow: hidden;
+    }
+  
+    .heading {
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+  
+    .heading h2 {
+      font-size: 20px;
+      line-height: 28px;
+      padding-left: 10%;
+    }
+  
+    .btnSection {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+  
+    .logos {
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+    .animatedSection {
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+  
+    .slider {
+      width: 300px;
+      font-size: 16px;
+    }
+  
+    .blueradius,
+    .spiral {
+      display: none;
+    }
+  }
+  
+  @media(max-width: 834px) {
+    .blueradius {
+        position: absolute;
+        height: 333px;
+        width: 346px;
+        right: 0px;
+        bottom: 500px;
+        z-index: 1;
+        opacity: 0.6;
+        filter: drop-shadow(83px -27px 6px rgba(0, 255, 0, 0.8));
+      }
+      .spiral {
+        position: absolute;
+        height: 135px;
+        width: 223px;
+        right: 20px;
+        bottom: 120px;
+        z-index: 1;
+        opacity: 0.8;
+      }
+
+}
+
+
+  @media(max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+        height: auto;
+        position: relative;
+      }
+    
+      .subcontainer {
+        width: 100%;
+        padding: 20px 0 10px 0;
+      }
+    
+      .header {
+        padding: 0 10px;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+      }
+    
+      .heading {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .heading h2 {
+        font-size: 38px;
+        line-height: 35px;
+      }
+    
+      .btnSection {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 16px;
+      }
+    
+      .logos {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    
+      .animatedSection {
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .slider {
+        width: 300px;
+        font-size: 16px;
+      }
+    
+      .blueradius {
+        position: absolute;
+        height: 333px;
+        width: 346px;
+        right: 120px;
+        bottom: 100px;
+        z-index: 1;
+        opacity: 0.6;
+        filter: drop-shadow(83px -27px 6px rgba(0, 255, 0, 0.8));
+      }
+      .spiral {
+        position: absolute;
+        height: 135px;
+        width: 223px;
+        right: 30px;
+        bottom: 120px;
+        z-index: 1;
+        opacity: 0.8;
+      }
+  }
+  /* For screens (min-width: 1440px) */
+  
+  @media (min-width:1024px)
+  {
+    .container{
+        padding-right: 20px;
+    }
+    .blueradius {
+        position: absolute;
+        height: 333px;
+        width: 346px;
+        right: 40px;
+        bottom: 130px;
+        z-index: 1;
+        opacity: 0.6;
+        filter: drop-shadow(83px -27px 6px rgba(0, 255, 0, 0.8));
+      }
+      .spiral {
+        position: absolute;
+        height: 135px;
+        width: 223px;
+        right: 20px;
+        bottom: 170px;
+        z-index: 1;
+        opacity: 0.8;
+      }
+  }
+
+  /* For desktop */
+  @media (min-width: 1360px) and (max-width: 1920px) {
+    .blueradius {
+        position: absolute;
+        height: 333px;
+        width: 346px;
+        right: 330px;
+        bottom: 190px;
+        z-index: 1;
+        opacity: 0.6;
+        filter: drop-shadow(83px -27px 6px rgba(0, 255, 0, 0.8));
+      }
+      .spiral {
+        position: absolute;
+        height: 155px;
+        width: 223px;
+        right: 250px;
+        bottom: 210px;
+        z-index: 1;
+        opacity: 0.8;
+      }
+  }

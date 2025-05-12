@@ -132,14 +132,14 @@
     cursor: pointer;
 }
 .logo {
-    /* transition: opacity 0.3s ease; */
+   
     filter: brightness(70%);    opacity: 0.8;
 }
 .logo:hover {
     opacity: 0.8;
 }
 .logo.active {
-    /* border: 2px solid #3a86ff; */
+   
     filter: brightness(100%);
     border-radius: 4px;
 

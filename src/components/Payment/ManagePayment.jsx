@@ -9,7 +9,6 @@ import user from "../../assets/payment/user.svg";
 import upperArrow from "../../assets/upperArrow.svg";
 import splash from "../../assets/splash.svg";
 
-
 const features = [
   {
     title: "Easy Invoicing",
