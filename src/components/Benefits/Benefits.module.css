@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 4px;
-  position: absolute;
+  /* position: absolute; */
 }
 /* .radiusImg{
     position: absolute;
@@ -37,7 +37,7 @@
   opacity: 0.8;
 }
 .subcontainer {
-  width: 1160px;
+  width: 1165px;
   max-width: 1160px;
   border-radius: 16px;
   display: flex;
