@@ -2,62 +2,101 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 12.67vw 0px 12.67vw;
+    padding:4rem 2rem 4rem 2rem;
     background-color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
   }
   
-  .subcontainer{
-    border: 2px solid black;
-  }
+ 
   .textContainer {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
     
   }
   
   .textContainer h2 {
-    font-size: 3.3vw;
-    font-weight: 700;
-    line-height: 64px;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 8.3vh;
     font-family: 'Sora', sans-serif;
   }
   
   .reviewWrapper {
     display: flex;
     align-items: center;
-     gap: 100px; 
+    gap: 100px; 
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1075px;
   }
   
   .reviewItem {
     text-align: center;
-    width: 243.5px;
+    width: 16.9vw;
   }
   
   .stars {
     color: #ffa500;
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 4em;
+    padding-top: 1rem;
   }
   
   .quote {
     font-style: italic;
-    font-size: 14px;
     color: #666;
-    margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
-    line-height: 32px;
+    line-height: 1.52vh;
     font-weight: 400;
-    font-size: 14.88px;
+    font-size: 0.9em;
   }
   
   .logo {
-    height: 56px;
-    width: 227px;
+    height: 5.88vh;
+    width: 15.7vw;
     object-fit: contain;
     max-width: 318.34px;
+  }
+  
+
+  @media (max-width: 1024px) {
+  
+    .textContainer h2 {
+      font-size: 3em;
+      line-height: 1.4em;
+    }
+  
+    .reviewWrapper {
+      gap: 50px;
+      justify-content: center;
+    }
+  
+    .reviewItem {
+      width: 40vw;
+    }
+  
+    .stars {
+      font-size: 3em;
+      padding-top: 2vh;
+    }
+  
+    .quote {
+      font-size: 0.9em;
+      line-height: 1.4em;
+      margin: 1vh 0;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .textContainer h2 {
+      font-size: 2em;
+    }
+  
+    .reviewItem {
+      width: 80vw;
+    }
+  
+    .logo {
+      width: 70vw;
+    }
   }
   
