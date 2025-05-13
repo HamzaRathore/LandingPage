@@ -10,12 +10,30 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "About", href: "/" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Features", href: "/features" },
-    { name: "Integration", href: "/integration" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    {
+      name: "About",
+      href: "/",
+    },
+    {
+      name: "Pricing",
+      href: "/pricing",
+    },
+    {
+      name: "Features",
+      href: "/features",
+    },
+    {
+      name: "Integration",
+      href: "/integration",
+    },
+    {
+      name: "Blog",
+      href: "/blog",
+    },
+    {
+      name: "Contact",
+      href: "/contact",
+    },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -26,8 +44,6 @@ const Navbar = () => {
       <div className={styles.logo}>
         <img src={logo} alt="Logo" />
       </div>
-
-      
 
       {/* Navigation Links */}
       <div

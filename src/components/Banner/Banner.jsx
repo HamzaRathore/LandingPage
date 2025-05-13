@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./Banner.module.css";
 import rightArrow from "../../assets/arrow-right-round.png";
-import dashboard from "../../assets/Dashboard.svg";
-import greenRad from "../../assets/greenRadius.svg";
-import blueRad from "../../assets/blueRadius.svg";
+import banner from "../../assets/banner.svg";
+import group from '../../assets/group.svg'
+
 
 
 const Banner = () => {
@@ -20,6 +20,7 @@ const Banner = () => {
   return (
     <div  data-aos="fade-up"
     data-aos-delay="200" className={styles.container}>
+      <img className={styles.spiral} src={group} alt="group-img" />
       <div className={styles.textBoard}>
         <div className={styles.header}>
           <p className={styles.heading}>
@@ -31,7 +32,7 @@ const Banner = () => {
           </p>
 
           <button className={styles.btn}>
-            Try it on browser
+            <p>Try it on browser</p>
             <span>
               <img src={rightArrow} alt="Arrow" />
             </span>
@@ -42,10 +43,8 @@ const Banner = () => {
 
       {/* Dashboard image */}
       <div className={styles.DashboardImages}>
-        <img className={styles.dashboard} src={dashboard} alt="dashboard image" />
-        <img className={styles.imgRight} src={greenRad} alt="green-radius-right" />
-        <img className={styles.imgLeft} src={blueRad} alt="blue-radius-right" />
-      </div>
+        <img className={styles.dashboard} src={banner} alt="dashboard image" />
+        </div>
     </div>
   );
 };
