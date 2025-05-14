@@ -20,7 +20,7 @@ const steps = [
     },
     {
       id: 3,
-      title: 'Send & get payments',
+      title: 'Send payments',
       description: 'Make global payments and get paid in any currency in 24h.',
     },
     {
@@ -30,7 +30,7 @@ const steps = [
     },
   ];
   
-  const Analysis = () => {
+   const Analysis = () => {
      useEffect(() => {
         AOS.init({
           duration: 1000,
@@ -41,7 +41,8 @@ const steps = [
     const [active, setActive] = useState(1);
   
     return (
-      <section data-aos="fade-up" data-aos-delay="200" className={styles.wrapper}>
+       <section data-aos="fade-up" data-aos-delay="200" className={styles.container}>
+    
         <img src={analysisGradient} alt="glow" className={styles.glow} />
         {/* <img src={greenRadius} alt="greenradius" className={styles.greenglow} /> */}
         <img src={spiral} alt="spiral" className={styles.spiral} />
@@ -56,7 +57,9 @@ const steps = [
               className={`${styles.card} ${active === step.id ? styles.active : ''}`}
               onClick={() => setActive(step.id)}
             >
-              <div className={styles.stepNum}>{`0${step.id}.`}</div>
+              <div className={styles.stepNum}>
+                {`0${step.id}.`}
+                </div>
               <h3>{step.title}</h3>
               {active === step.id && <p>{step.description}</p>}
             </div>

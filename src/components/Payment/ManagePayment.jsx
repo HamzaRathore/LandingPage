@@ -45,7 +45,7 @@ const ManagePayment = () => {
   }, []);
 
   return (
-    <section
+    <div
       data-aos="fade-up"
       data-aos-delay="200"
       className={styles.container}
@@ -87,7 +87,7 @@ const ManagePayment = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

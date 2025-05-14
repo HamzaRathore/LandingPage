@@ -84,7 +84,7 @@ const Features = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.subContainer}>
         <div className={styles.heading}>
           <h1>Why clarityU</h1>
@@ -98,11 +98,7 @@ const Features = () => {
         </div>
 
         <div className={styles.featureContainer}>
-          <img
-            className={styles.greenImg}
-            src={greenRadius}
-            alt="green background"
-          />
+          <img className={styles.greenImg} src={greenRadius} alt="green background" />
           <img className={styles.spark} src={spark} alt="spark" />
 
           {/* Left Section */}
@@ -110,8 +106,6 @@ const Features = () => {
             <div className={styles.header}>
               <img src={logo} alt="logo" />
             </div>
-
-            {/* Left section */}
             <div className={styles.featuresBox}>
               <h2>FEATURES INCLUDED:</h2>
               {pros.map((pro) => (
@@ -123,13 +117,13 @@ const Features = () => {
             </div>
           </div>
 
-          {/* VS circle */}
+          {/* VS Circle */}
           <div className={styles.vs}>
             <img src={vs} alt="vs" />
           </div>
 
-          {/* Right section */}
-          <div className={styles.leftSec}>
+          {/* Right Section */}
+          <div className={styles.rightSec}>
             <div className={styles.header}>
               <h2>Other Softwares</h2>
             </div>

@@ -35,7 +35,8 @@ const CreditDetail = () => {
 
   return (
     <div>
-      <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
+       <div data-aos="fade-up" data-aos-delay="200" className={styles.container}> 
+       
         {/* section 1 */}
         <div className={styles.section1}>
           <div className={styles.sec1Img}>
@@ -45,11 +46,7 @@ const CreditDetail = () => {
           {/* for text */}
           <div className={styles.textContainer}>
             <h2>
-              Manage all your{" "}
-              <span>
-                <br />
-              </span>{" "}
-              cards in one place
+              Manage all your cards in one place
             </h2>
             <p>
               Centralize and simplify payments, and get comprehensive insights
@@ -74,14 +71,7 @@ const CreditDetail = () => {
           <div className={styles.sec2Text}>
             <div>
               <h2>
-                Pay invoices, on time{" "}
-                <span>
-                  <br />
-                </span>{" "}
-                every time across{" "}
-                <span>
-                  <br />
-                </span>
+                Pay invoices, on time every time across{" "}
                 borders
               </h2>
               <p>
@@ -89,6 +79,7 @@ const CreditDetail = () => {
                 charges, within 24 hours or less. Make international
                 transactions a piece of cake.
               </p>
+              <br />
               <p>
                 Avoid late fees and penalties, and capture every early payment
                 discount with reminders and automated approvals

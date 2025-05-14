@@ -24,7 +24,7 @@ const reviews = [
     name: "Annette Black",
     title: "CTO, Poppers",
     src: review2,
-    text: "We switched to Milestone and immediately saw productivity improvements across our finance team.",
+    text: "We switched to Milestone and immediately saw productivity improvements across our finance team.Milestone makes managing finances incredibly easy.",
     videoUrl: "https://www.youtube.com/embed/nm09cQSskn8"
   },
   {
@@ -40,7 +40,7 @@ const reviews = [
     name: "Leslie Alexander",
     title: "Founder, Pritom",
     src: review4,
-    text: "We love the automation features and clean UI. It changed the way we handle expenses.",
+    text: "We love the automation features and clean UI. It changed the way we handle expenses.Milestone makes managing finances incredibly easy.",
     videoUrl: "https://www.youtube.com/embed/nm09cQSskn8"
   },
 ];

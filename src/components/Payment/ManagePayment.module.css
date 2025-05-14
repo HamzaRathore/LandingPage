@@ -1,15 +1,15 @@
 .container {
   width: 100%;
-  padding: 50px 20px;
+  padding: 3.12rem 1.25rem;
   background-image: radial-gradient(
     circle 250px at 700px 450px,
-    rgba(144, 215, 243, 0.3),
-    rgba(119, 119, 255, 0.2),
+    rgba(144, 215, 243, 0.5),
+    rgba(119, 119, 255, 0.3),
     transparent
   );
 }
 .wrapper {
-  max-width: 1200px;
+  max-width: 69vw;
   margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
   background: #000;
   grid-column: span 2;
   color: #fff;
-  padding: 38px 38px;
+  padding: 2.37rem 2.37rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -32,11 +32,11 @@
 }
 
 .headBox h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
   font-family: "Sora", sans-serif;
   font-weight: 600;
-  line-height: 64px;
+  line-height: 4rem;
  
 }
 
@@ -49,7 +49,7 @@
 .ctaButton {
   background-color: #caef45;
   color: #000;
-  padding: 20px 32px 20px 48px;
+  padding: 1.25rem 2rem 1.25rem 3rem;
   border-radius: 36px;
   font-weight: 700;
   cursor: pointer;
@@ -67,7 +67,7 @@
 
 .card {
   background: #fff;
-  padding: 35px 25px;
+  padding: 2rem 1.7rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -78,16 +78,16 @@
 .card h3 {
   font-family: "Sora", sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 40px;
-  max-width: 280px;
-  margin-bottom: 15px;
+  font-size: 1.5em;
+  line-height: 30px;
+  max-width: 19.4vw;
+  margin-bottom: 0.5em;
 }
 
 .card p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16.59px;
+  font-size: 1.1em;
   line-height: 28px;
   
 }
@@ -97,9 +97,9 @@
 }
 
 .icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+  width: 5.5vw;
+  height: 5.5vh;
+  margin-bottom: 1.2em;
 }
 
 .div1,
@@ -113,77 +113,73 @@
 @media (max-width: 768px) {
   .container {
     background-image: radial-gradient(
-      circle 150px at center,
-      rgba(144, 215, 243, 0.3),
-      rgba(119, 119, 255, 0.2),
+      circle 9.375rem at center,
+      rgb(233, 233, 233),
+      rgb(244, 244, 248),
       transparent
     );
   }
 
   .headBox {
     grid-column: span 1;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .headBox h2 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 1.375rem;
+    line-height: 2rem;
   }
 
   .ctaButton {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
   }
 
   .headImg {
-    top: 30px;
-    left: 10px;
-    width: 120px;
-  }
+    display: none;
+  } 
 
   .card {
-    padding: 20px 15px;
+    padding: 1.25rem 0.9375rem;
   }
 
   .card h3 {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .card p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
-@media (max-width: 982px) {
-  .headBox {
-    margin-left: 20px;
-    overflow: hidden;
-  }
-  .card {
-    margin-left: 20px;
-  }
-}
 
-@media (max-width: 1298px) {
+@media (max-width: 1024px) { 
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-image: radial-gradient(
+      circle 250px at 450px 450px,
+      rgba(144, 215, 243, 0.5),
+      rgba(119, 119, 255, 0.3),
+      transparent
+    );
   }
+  
+
   .wrapper {
-    padding-left: 10px;
-    padding-right: 60px;
+    padding-left: 0.625rem;
+    padding-right: 3.75rem;
   }
+   .headImg {
+    top: 5.9rem;
+    left: 0.9rem;
+    width: 1.5rem;
+  } 
 }
 
-@media (max-width: 773px) {
-  .headImg {
-    display: none;
-  }
-}
-
-@media (min-width: 774px) {
+@media (min-width: 774px) { 
   .headImg {
     display: block;
   }
