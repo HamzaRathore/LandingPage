@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import styles from "./Blog.module.css";
 import blog1 from "../../assets/blog/blog1.svg";
 import blog2 from "../../assets/blog/blog2.svg";
 import blog3 from "../../assets/blog/blog3.png";
 import upperArrow from "../../assets/arrU.svg";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const blogs = [
   {
@@ -34,9 +36,16 @@ const blogs = [
 ];
 
 function Blog() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const [active, setActive] = useState(blogs[0]);
   return (
-    <div className={styles.container}>
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
       <div className={styles.subcontainer}>
         <div className={styles.header}>
           <h1>Recent Blog</h1>

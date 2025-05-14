@@ -5,7 +5,7 @@ import styles from "./Analysis.module.css";
 import star from '../../assets/analysis/star.svg'
 import spiral from '../../assets/analysis/spiral.svg'
 import analysisGradient from '../../assets/analysis/analysisGradient.svg'
-import greenRadius from "../../assets/greenRadius.svg";
+
 
 const steps = [
     {
@@ -44,7 +44,6 @@ const steps = [
        <section data-aos="fade-up" data-aos-delay="200" className={styles.container}>
     
         <img src={analysisGradient} alt="glow" className={styles.glow} />
-        {/* <img src={greenRadius} alt="greenradius" className={styles.greenglow} /> */}
         <img src={spiral} alt="spiral" className={styles.spiral} />
         <img src={star} alt="star" className={styles.star} />
         <div className={styles.heading}>

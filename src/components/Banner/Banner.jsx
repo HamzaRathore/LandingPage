@@ -5,6 +5,7 @@ import styles from "./Banner.module.css";
 import rightArrow from "../../assets/arrow-right-round.png";
 import banner from "../../assets/banner.svg";
 import group from '../../assets/group.svg'
+import { Link } from "react-router-dom";
 
 
 
@@ -30,13 +31,14 @@ const Banner = () => {
             Know where your spend is going and manage your finances more
             efficiently and Milestone
           </p>
-
+          <Link className={styles.btnLink} to={'https://milestone-webflow-html-website-template.webflow.io/'}>
           <button className={styles.btn}>
             <p>Try it on browser</p>
             <span>
               <img src={rightArrow} alt="Arrow" />
             </span>
           </button>
+          </Link>
         </div>
         <div></div>
       </div>

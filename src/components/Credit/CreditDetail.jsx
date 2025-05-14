@@ -35,8 +35,7 @@ const CreditDetail = () => {
 
   return (
     <div>
-       <div data-aos="fade-up" data-aos-delay="200" className={styles.container}> 
-       
+      <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
         {/* section 1 */}
         <div className={styles.section1}>
           <div className={styles.sec1Img}>
@@ -45,9 +44,7 @@ const CreditDetail = () => {
 
           {/* for text */}
           <div className={styles.textContainer}>
-            <h2>
-              Manage all your cards in one place
-            </h2>
+            <h2>Manage all your cards in one place</h2>
             <p>
               Centralize and simplify payments, and get comprehensive insights
               on your financials. Connect your bank account and your card to
@@ -70,10 +67,7 @@ const CreditDetail = () => {
         <div className={styles.section2}>
           <div className={styles.sec2Text}>
             <div>
-              <h2>
-                Pay invoices, on time every time across{" "}
-                borders
-              </h2>
+              <h2>Pay invoices, on time every time across borders</h2>
               <p>
                 Send and receive payments in any currency, without any extra
                 charges, within 24 hours or less. Make international

@@ -1,19 +1,19 @@
 .container {
   position: relative;
-  margin: 2.77vh 9.72vw 0 9.72vw;
+  margin: 2.7vh 9.7vw 0 9.7vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  width: 6.81rem; 
-  height: 1.87rem; 
+  width: 6.8rem; 
+  height: 1.8rem; 
   padding: 0.16rem 0; 
 }
 
 .nav-links {
-  margin: 0.43rem 0; 
+  margin: 0.4rem 0; 
 }
 
 .nav-links ul {
@@ -27,7 +27,7 @@
 .nav-links ul li {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 0.93rem;
+  font-size: 0.9rem;
   line-height: 1.5rem; 
   height: 1.5rem;
 }
@@ -40,26 +40,26 @@
   text-decoration: none;
   color: black;
   display: inline-block;
-  padding: 0.31rem 1.25rem;
-  border-radius: 0.25rem; 
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.2rem; 
   transition: all 0.3s ease;
   font-family: "Inter", sans-serif;
 }
 
 .nav-btn {
-  width: 17.56rem; 
+  width: 17.5rem; 
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.937rem;
+  gap: 0.9rem;
   font-family: "Inter", sans-serif;
 }
 
 .cart-logo {
   display: flex;
   align-items: center;
-  gap: 0.31rem;
+  gap: 0.3rem;
   font-size: 0.87rem;
 }
 
@@ -77,15 +77,15 @@
 
 .SignUp-btn {
   height: 100%;
-  width: 7.56rem;
-  border-radius: 1.87rem;
-  padding: 0.75rem 1.25rem;
+  width: 7.5rem;
+  border-radius: 1.8rem;
+  padding: 0.7rem 1.2rem;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.31rem;
+  gap: 0.3rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -116,7 +116,7 @@
 
 /* Responsiveness */
 
-@media (max-width: 64rem) {
+@media (max-width: 1024px) {
   .container {
     position: relative;
   }
@@ -129,8 +129,8 @@
     width: 100%;
     background-color: white;
     z-index: 1;
-    height: 11.25rem;
-    padding: 0.62rem 0;
+    height: 11.2rem;
+    padding: 0.6rem 0;
     box-shadow: 0 0.5rem 0.5rem -0.25rem rgba(0, 0, 0, 0.1); /* Converted */
   }
 
@@ -145,11 +145,11 @@
   .nav-links ul li {
     width: 100%;
     text-align: left;
-    padding: 0.31rem 1.25rem; 
+    padding: 0.3rem 1.2rem; 
   }
 
   .nav-links ul li a {
-    padding: 0.62rem; 
+    padding: 0.6rem; 
     display: block;
   }
 
@@ -162,10 +162,9 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 48rem) {
+@media (max-width: 767px) {
   .container {
-    margin: 1.25rem; /* 20px */
+    margin: 1.2rem; 
     flex-wrap: wrap;
   }
 
@@ -180,9 +179,9 @@
 
   .menuToggle .bar {
     display: block;
-    width: 1.56rem; 
-    height: 0.18rem; 
-    margin: 0.31rem 0; 
+    width: 1.5rem; 
+    height: 0.2rem; 
+    margin: 0.3rem 0; 
     background-color: black;
   }
 
@@ -190,7 +189,7 @@
     order: 3;
     width: 100%;
     display: none;
-    margin: 0.625rem 0; 
+    margin: 0.6rem 0; 
   }
 
   .nav-links.open {
@@ -204,11 +203,11 @@
   .nav-links ul li {
     width: 100%;
     text-align: left;
-    padding: 0.31rem 0; 
+    padding: 0.3rem 0; 
   }
 
   .nav-links ul li a {
-    padding: 0.62rem; 
+    padding: 0.6rem; 
     display: block;
   }
 
@@ -216,7 +215,7 @@
     order: 4;
     width: 100%;
     justify-content: flex-start;
-    margin-top: 0.93rem; 
+    margin-top: 0.9rem; 
     display: none;
   }
 
@@ -225,14 +224,13 @@
   }
 }
 
-/* Small Mobile Screens */
 @media (max-width: 480px) {
   .container {
-    margin: 0.93rem; 
+    margin: 0.9rem; 
   }
 
   .SignUp-btn {
-    width: 6.25rem; 
-    padding: 0.75rem 0.93rem; 
+    width: 6.2rem; 
+    padding: 0.7rem 0.9rem; 
   }
 }

@@ -51,7 +51,7 @@ const ManagePayment = () => {
       className={styles.container}
     >
       <div className={styles.wrapper}>
-        <img className={styles.headImg} src={splash} alt="" />
+        <img className={styles.headImg} src={splash} />
         <div className={styles.gridLayout}>
           {/* grid1 */}
           <div className={`${styles.headBox} ${styles.grid1}`}>
@@ -70,7 +70,7 @@ const ManagePayment = () => {
             </button>
           </div>
 
-          {/*  feature cards */}
+          {/* cards */}
           {features.map((feature, index) => (
             <div
               key={index}

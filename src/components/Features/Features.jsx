@@ -16,63 +16,60 @@ const pros = [
     src: tick,
     des: "No hidden fees. No surprises",
   },
-  { 
-    id: 2, 
-    src: tick, 
-    des: "Manage taxes, automatically" 
-},
-  { 
-    id: 3, 
-    src: tick, 
-    des: "Supports 190+ countries" 
-},
-  { 
-    id: 4, 
-    src: tick, 
-    des: "Provides 24/7 live support" 
-},
-  { 
-    id: 5, 
-    src: tick, 
-    des: "Integrates seamlessly with Stripe" 
-},
-  { 
-    id: 6, 
-    src: tick, 
-    des: "Works with the real exchange rate" 
-},
+  {
+    id: 2,
+    src: tick,
+    des: "Manage taxes, automatically",
+  },
+  {
+    id: 3,
+    src: tick,
+    des: "Supports 190+ countries",
+  },
+  {
+    id: 4,
+    src: tick,
+    des: "Provides 24/7 live support",
+  },
+  {
+    id: 5,
+    src: tick,
+    des: "Integrates seamlessly with Stripe",
+  },
+  {
+    id: 6,
+    src: tick,
+    des: "Works with the real exchange rate",
+  },
 ];
 
 const cons = [
-  { 
-    id: 1, 
-    src: cross, 
-    des: "Complicated fee structure" 
-},
-  { 
-    id: 2, 
-    src: cross, 
-    des: "Need a lot of manual tax management" 
-},
-  { 
-    id: 3, 
-    src: cross, 
-    des: "Support 50-100 countries" 
-},
-  { id: 4, 
-    src: cross, 
-    des: "Have poor support and weekends off" 
-},
-  { 
-    id: 5, 
-    src: cross, 
-    des: "Have spotty integrations" 
-},
-  { 
-    id: 6, 
-    src: cross, 
-    des: "Use unfair, higher exchange rates" 
-},
+  {
+    id: 1,
+    src: cross,
+    des: "Complicated fee structure",
+  },
+  {
+    id: 2,
+    src: cross,
+    des: "Need a lot of manual tax management",
+  },
+  {
+    id: 3,
+    src: cross,
+    des: "Support 50-100 countries",
+  },
+  { id: 4, src: cross, des: "Have poor support and weekends off" },
+  {
+    id: 5,
+    src: cross,
+    des: "Have spotty integrations",
+  },
+  {
+    id: 6,
+    src: cross,
+    des: "Use unfair, higher exchange rates",
+  },
 ];
 
 const Features = () => {
@@ -84,7 +81,7 @@ const Features = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
       <div className={styles.subContainer}>
         <div className={styles.heading}>
           <h1>Why clarityU</h1>
@@ -98,7 +95,11 @@ const Features = () => {
         </div>
 
         <div className={styles.featureContainer}>
-          <img className={styles.greenImg} src={greenRadius} alt="green background" />
+          <img
+            className={styles.greenImg}
+            src={greenRadius}
+            alt="green background"
+          />
           <img className={styles.spark} src={spark} alt="spark" />
 
           {/* Left Section */}

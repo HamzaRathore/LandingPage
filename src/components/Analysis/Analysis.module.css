@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    padding: 5rem 0.98rem;
+    padding: 5rem 1rem;
     background: #000;
     color: #fff;
     overflow: hidden;
@@ -10,22 +10,16 @@
   .glow {
     position: absolute;
     left: 0;
-    top: 10%;
-    width: 20.83vw;
+    top: 24%;
+    width: 20.8vw;
     z-index: 0;
   }
-  /* .greenglow {
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 300px;
-    z-index: 0;
-  } */
+  
   
   .spiral {
     position: absolute;
-    left: 10.62rem;
-    bottom: 7.5rem;
+    left: 10.6rem;
+    bottom: 10.5rem;
     width: 8.5vw;
     height: 22.9vh;
   }
@@ -71,7 +65,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
-    width: 8.33vw;
+    width: 8.3vw;
     height: 46.5vh;
     max-width: 836px;
     max-height: 46.5vh;
@@ -81,7 +75,7 @@
   .card h3 {
     font-size: 1.1em;
     width: 100%;
-    margin-top: 3.75em;
+    margin-top: 3.7em;
     transform: rotate(90deg);
     font-family: 'Inter', sans-serif;
     font-weight: 400; 
@@ -119,9 +113,9 @@
     font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 4.12rem;
+    font-size: 4.1rem;
     line-height: 6rem;
-    letter-spacing: -1.76px;
+    letter-spacing: -1.7px;
   }
 
   .active h3 {
@@ -154,7 +148,7 @@
     }
     .spiral{
       position: absolute;
-      left: 6.62rem;
+      left: 6.6rem;
       bottom: 7.5rem;
       width: 9.5vw;
       height: 24.9vh;
@@ -163,7 +157,7 @@
       position: absolute;
       left: 0;
       top: 30%;
-      width: 20.83vw;
+      width: 20.8vw;
       z-index: 0;
     }
   }
@@ -182,7 +176,7 @@
     .card {
       width: 9.5vw;
       height: 24vh;
-      padding: 1.2rem 0.99rem;
+      padding: 1.2rem 1rem;
     }
     
     .card h3 {
@@ -271,7 +265,7 @@
     
     .active p {
       display: block;
-      margin-top: o.7rem;
+      margin-top: 0.7rem;
     }
     
     .glow {

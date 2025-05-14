@@ -1,102 +1,95 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:4rem 2rem 4rem 2rem;
-    background-color: white;
-    /* border: 2px solid black; */
-  }
-  
- 
-  .textContainer {
-    text-align: center;
-    margin-bottom: 3rem;
-    
-  }
-  
-  .textContainer h2 {
-    font-size: 4em;
-    font-weight: 600;
-    line-height: 8.3vh;
-    font-family: 'Sora', sans-serif;
-  }
-  
-  .reviewWrapper {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .reviewItem {
-    text-align: center;
-    width: 16.9vw;
-  }
-  
-  .stars {
-    color: #ffa500;
-    font-size: 4em;
-    padding-top: 1rem;
-  }
-  
-  .quote {
-    font-style: italic;
-    color: #666;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.52vh;
-    font-weight: 400;
-    font-size: 0.9em;
-  }
-  
-  .logo {
-    height: 5.88vh;
-    width: 15.7vw;
-    object-fit: contain;
-    max-width: 318.34px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 4rem 2rem;
+  background-color: white;
+}
 
-  @media (max-width: 1024px) {
-  
-    .textContainer h2 {
-      font-size: 3em;
-      line-height: 1.4em;
-    }
-  
-    .reviewWrapper {
-      gap: 50px;
-      justify-content: center;
-    }
-  
-    .reviewItem {
-      width: 40vw;
-    }
-  
-    .stars {
-      font-size: 3em;
-      padding-top: 2vh;
-    }
-  
-    .quote {
-      font-size: 0.9em;
-      line-height: 1.4em;
-      margin: 1vh 0;
-    }
-  
+.textContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.textContainer h2 {
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 8.3vh;
+  font-family: "Sora", sans-serif;
+}
+
+.reviewWrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reviewItem {
+  text-align: center;
+  width: 16.9vw;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 4em;
+  padding-top: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #666;
+  font-family: "Inter", sans-serif;
+  line-height: 1.52vh;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.logo {
+  height: 5.8vh;
+  width: 15.7vw;
+  object-fit: contain;
+  max-width: 318.3px;
+}
+
+@media (max-width: 1024px) {
+  .textContainer h2 {
+    font-size: 3em;
+    line-height: 1.4em;
   }
-  
-  @media (max-width: 768px) {
-    .textContainer h2 {
-      font-size: 2em;
-    }
-  
-    .reviewItem {
-      width: 80vw;
-    }
-  
-    .logo {
-      width: 70vw;
-    }
+
+  .reviewWrapper {
+    gap: 50px;
+    justify-content: center;
   }
-  
+
+  .reviewItem {
+    width: 40vw;
+  }
+
+  .stars {
+    font-size: 3em;
+    padding-top: 2vh;
+  }
+
+  .quote {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin: 1vh 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .textContainer h2 {
+    font-size: 2em;
+  }
+
+  .reviewItem {
+    width: 80vw;
+  }
+
+  .logo {
+    width: 70vw;
+  }
+}

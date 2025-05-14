@@ -29,6 +29,7 @@
   width: 58.19vw;
   height: 43.5vh;
   gap: 2vw;
+ 
 }
 
 .heading {
@@ -70,6 +71,9 @@
   transition: all 0.3s ease;
 }
 
+.btnLink{
+  text-decoration:none;
+}
 .btn p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -82,12 +86,14 @@
   }
 .DashboardImages {
   overflow: hidden;
+  
 }
 .dashboard {
   width: 100vw; 
   height: auto; 
   display: block;
-  margin-top: -5vh;
+  margin-top: -30vh;
+  z-index: 3; 
 }
 
 @media (max-width: 768px) {
@@ -134,6 +140,7 @@
     .dashboard {
       width: 100vw;
       height: auto;
+      margin-top: 0;
     }
     .spiral{
         display: none;

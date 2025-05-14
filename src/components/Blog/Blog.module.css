@@ -134,7 +134,7 @@
 }
 
 .btnImg {
-  height: 2.12rem; 
+  height: 2.1rem; 
   width: 2.2rem;
 }
 
@@ -143,12 +143,12 @@
   display: flex;
   justify-content: space-between;
   gap: 1.2rem;
-  height: 8.75rem; 
+  height: 8.7rem; 
 }
 
 .blogTabWrapper {
   width: 100%;
-  max-width: 23.75rem; /* 380px */
+  max-width: 23.7rem; 
   display: flex;
   box-shadow: 0 0.4rem 1.7rem rgba(0, 0, 0, 0.15);
   border-radius: 0.6rem;
@@ -222,7 +222,7 @@
     padding: 0.5rem;
   }
   .footerContent h3 {
-    font-size: 0.62rem; 
+    font-size: 0.6rem; 
     line-height: 1rem; 
   }
   .footerContent h2 {
@@ -267,8 +267,8 @@
   }
 
   .title h2 {
-    font-size: 1.375rem; 
-    line-height: 1.875rem; 
+    font-size: 1.3rem; 
+    line-height: 1.8rem; 
   }
 
   .description p {

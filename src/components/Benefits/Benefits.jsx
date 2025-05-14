@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Benefits.module.css";
 import upperArrow from "../../assets/upperArrow.svg";
 import apple from "../../assets/benefits/apple.svg";
@@ -13,6 +13,8 @@ import blueRad from "../../assets/cust-review/blueRad.svg";
 import greenRadius from "../../assets/greenRadius.svg";
 import spiral from "../../assets/benefits/spiral.svg";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const leftlogo = [
   {
@@ -50,9 +52,17 @@ const rightlogo = [
 ];
 
 const Benefits = () => {
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    }, []);
+
   return (
-    <div className={styles.container}>
-      {/* <img className={styles.radiusImg} src={greenRadius} alt="shadow" /> */}
+    <div data-aos="fade-up"
+    data-aos-delay="200" className={styles.container}>
       <img className={styles.blueradius} src={blueRad} alt="shadow" />
       <img className={styles.spiral} src={spiral} alt="spiral" />
       <div className={styles.subcontainer}>
