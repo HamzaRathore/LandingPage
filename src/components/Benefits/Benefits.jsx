@@ -12,6 +12,7 @@ import tick from "../../assets/benefits/tick.svg";
 import blueRad from "../../assets/cust-review/blueRad.svg";
 import greenRadius from "../../assets/greenRadius.svg";
 import spiral from "../../assets/benefits/spiral.svg";
+import { Link } from "react-router-dom";
 
 const leftlogo = [
   {
@@ -49,7 +50,6 @@ const rightlogo = [
 ];
 
 const Benefits = () => {
-  
   return (
     <div className={styles.container}>
       {/* <img className={styles.radiusImg} src={greenRadius} alt="shadow" /> */}
@@ -66,12 +66,19 @@ const Benefits = () => {
 
           <div className={styles.btnSection}>
             <div>
-              <button className={styles.arrowButton}>
-                TRY IT ON BROWSER
-                <span className={styles.arrow}>
-                  <img src={upperArrow} alt="Upper Arrow" />
-                </span>
-              </button>
+              <Link
+                className={styles.btnLink}
+                to={
+                  "https://milestone-webflow-html-website-template.webflow.io/"
+                }
+              >
+                <button className={styles.arrowButton}>
+                  TRY IT ON BROWSER
+                  <span className={styles.arrow}>
+                    <img src={upperArrow} alt="Upper Arrow" />
+                  </span>
+                </button>
+              </Link>
             </div>
 
             <div className={styles.logos}>
