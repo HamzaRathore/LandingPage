@@ -1,77 +1,81 @@
 .container {
     width: 100%;
-    padding: 9.72vw 9.57vw 0.017vw 9.58vw;
+    padding: 9.7vw 9.6vw 0vw 9.6vw;
     background: white;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.69vw;
+    gap: 0.7vw;
   }
   
   .subcontainer {
-    width: 80.90vw;
-    /* max-width: 80.90vw; */
-    border: 2px solid black;
+    width: 80.9vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 4.72vw;
-    margin-bottom: 60px;
+    gap: 4.7vw;
+    margin-bottom: 3.8rem;
   }
   
   .section1,
   .section2,
   .section3,
   .section4 {
-    flex: 1 1 220px;
+    flex: 1 1 13.8rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.3rem;
+    text-align: center;
   }
   
   .logo {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
+    gap: 0.6rem;
+    max-width: 18.8rem;
   }
   
   .logo img {
-    width: 122px;
+    width: 7.6rem;
     height: auto;
   }
   
   .logo p {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
     color: #333;
   }
   
   .socialIcons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9rem;
+    align-items: flex-start;
   }
   
   .socialIcons h3 {
-    font-size: 14px;
-    letter-spacing: 1.12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: #333;
+    margin: 0;
   }
   
   .icons {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
   }
   
   .iconImg {
     background-color: #f4f4f4;
-    border-radius: 20px;
-    height: 40px;
-    width: 40px;
+    border-radius: 1.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,35 +88,37 @@
   }
   
   .iconImg img {
-    height: 20px;
-    width: 20px;
+    height: 1.3rem;
+    width: 1.3rem;
   }
   
   .navs {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 0.9rem;
   }
+  
   .navs h2 {
-    font-size: 14px;
-    letter-spacing: 1.12px;
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
   
- 
-  
   .navs a {
     text-decoration: none;
-    height: 30px; 
+    height: 1.9rem;
     display: block;
   }
   
   .navs p {
-    margin: 0; /* remove any default margins */
+    margin: 0;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 16px; /* smaller if you prefer */
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.4rem;
     color: black;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -120,48 +126,56 @@
   
   .navs p:hover {
     color: #666;
+    text-decoration: underline;
   }
   
   .newsletter {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 376px;
+    gap: 0.9rem;
+    max-width: 23.5rem;
   }
   
   .newsletter h2 {
-    font-size: 13px;
-    letter-spacing: 1.12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
     text-transform: uppercase;
     color: #000;
   }
   
   .newsletter p {
-    font-size: 14.75px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
     color: #000;
+    margin: 0;
   }
   
   .emailInput {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     align-items: center;
     width: 100%;
   }
   
   .emailInput input {
     flex: 1;
-    height: 56px;
-    border-radius: 32px;
+    height: 3.5rem;
+    border-radius: 2rem;
     background-color: #f4f4f4;
     border: none;
     outline: none;
-    font-size: 16px;
-    padding: 17.25px 24px;
+    font-size: 1rem;
+    padding: 1.1rem 1.5rem;
   }
   
   .emailInput input::placeholder {
     color: #000000b2;
-    font-size: 14.75px;
+    font-size: 0.9rem;
   }
   
   .emailInput button {
@@ -172,9 +186,9 @@
   }
   
   .btn {
-    width: 56px;
-    height: 56px;
-    border-radius: 28px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -192,25 +206,33 @@
   .copyright {
     width: 100%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 0.6rem 1.3rem;
     background-color: #f2f4f7;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
   }
   
   .copyright p {
-    font-size: 14.88px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
     color: #212121;
   }
   
-  /* Medium screens (tablets) */
+  /* Media Queries */
   @media (max-width: 1024px) {
     .container {
-      padding: 60px 40px 0;
+      padding: 3.8rem 2.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .subcontainer {
       justify-content: center;
+      align-items: center;
     }
   
     .section1,
@@ -221,15 +243,27 @@
     }
   }
   
-  /* Small screens (mobiles) */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .container {
-      padding: 40px 20px 0;
+      padding: 2.5rem 0 0;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .section1 {
+      align-items: center !important;
+    }
+  
+    .logo {
+      align-items: center;
+      text-align: center;
     }
   
     .subcontainer {
       flex-direction: column;
-      gap: 32px;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
     }
   
     .section1,
@@ -243,6 +277,7 @@
     .emailInput {
       flex-direction: column;
       align-items: stretch;
+      gap: 0.8rem;
     }
   
     .emailInput input,
@@ -250,8 +285,8 @@
       width: 100%;
     }
   
-    .emailInput {
-      gap: 12px;
+    .socialIcons {
+      align-items: center;
     }
   }
   
