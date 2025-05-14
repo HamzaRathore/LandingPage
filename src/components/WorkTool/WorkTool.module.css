@@ -1,14 +1,14 @@
 .container {
   width: 100%;
-  padding: 5rem 1.2rem;
+  padding: 5rem 11.9rem;
   display: flex;
   justify-content: center;
   background-color: white;
 }
 
 .content {
-  max-width: 82.3vw;
-  width: 100%;
+  max-width: 193.3vw;
+  width: 193vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@
   display: flex;
   justify-content: center;
 }
-.btnLink{
+.btnLink {
   text-decoration: none;
 }
 
@@ -85,6 +85,7 @@
 .toolItem {
   display: flex;
   flex-direction: column;
+  height: 12rem;
   align-items: center;
   gap: 0.9rem;
   padding: 1.87rem;
@@ -92,6 +93,7 @@
   border-radius: 0.6rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
 }
 
 .toolItem:hover {
@@ -100,7 +102,7 @@
 }
 
 .toolLogo {
-  height: 3.1rem;
+  height: 5.1rem;
   width: auto;
   object-fit: contain;
 }
@@ -113,9 +115,28 @@
 }
 
 /* Responsive Styles */
+
 @media (max-width: 1024px) {
   .toolGrid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .headingContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .txt {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -126,7 +147,7 @@
   }
 
   .heading h2 {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     margin-bottom: 2.5rem;
   }
 
@@ -149,7 +170,7 @@
 @media (max-width: 480px) {
   .toolGrid {
     grid-template-columns: 1fr;
-    max-width: 18.75rem;
+    max-width: 18.7rem;
   }
 
   .heading {
@@ -157,6 +178,6 @@
   }
 
   .container {
-    padding: 3.75rem 0.93rem;
+    padding: 3.7rem 0.9rem;
   }
 }

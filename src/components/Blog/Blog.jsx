@@ -4,6 +4,7 @@ import blog1 from "../../assets/blog/blog1.svg";
 import blog2 from "../../assets/blog/blog2.svg";
 import blog3 from "../../assets/blog/blog3.png";
 import upperArrow from "../../assets/arrU.svg";
+import { Link } from "react-router-dom";
 
 const blogs = [
   {
@@ -31,6 +32,7 @@ const blogs = [
     time: ". 8 MIN READ",
   },
 ];
+
 function Blog() {
   const [active, setActive] = useState(blogs[0]);
   return (
@@ -47,7 +49,6 @@ function Blog() {
           </div>
           {/* content */}
           <div className={styles.content}>
-           
             <div className={styles.contentHeader}>
               <div className={styles.category}>
                 <h2>{active.type}</h2>
@@ -61,21 +62,26 @@ function Blog() {
             </div>
 
             <div className={styles.description}>
-              <p>
-              {active.desc}
-              </p>
+              <p>{active.desc}</p>
             </div>
             <div>
-              <button className={styles.btn}>
-                <span>
-                  <img
-                    src={upperArrow}
-                    alt="btn-arrow"
-                    className={styles.btnImg}
-                  />
-                </span>
-                READ MORE
-              </button>
+              <Link
+                className={styles.btnLink}
+                to={
+                  "https://milestone-webflow-html-website-template.webflow.io/"
+                }
+              >
+                <button className={styles.btn}>
+                  <span>
+                    <img
+                      src={upperArrow}
+                      alt="btn-arrow"
+                      className={styles.btnImg}
+                    />
+                  </span>
+                  READ MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -83,8 +89,13 @@ function Blog() {
         <div className={styles.blogFooter}>
           {/* for img */}
           {blogs.map((blog) => (
-            <div key={blog.id} className={`${styles.blogTabWrapper} ${active.id ===blog.id? styles.active:''}`}
-            onClick={() => setActive(blog)}>
+            <div
+              key={blog.id}
+              className={`${styles.blogTabWrapper} ${
+                active.id === blog.id ? styles.active : ""
+              }`}
+              onClick={() => setActive(blog)}
+            >
               <div className={styles.footerInner}>
                 <div className={styles.footerImg}>
                   <img src={blog.src} alt="blogImg" />
