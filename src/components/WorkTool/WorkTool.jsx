@@ -9,16 +9,41 @@ import zapier from "../../assets/W-Tools/Zapier.svg";
 import kickstarter from "../../assets/W-Tools/KickStarter.svg";
 import mailchimp from "../../assets/W-Tools/MailChimp.svg";
 import upperArrow from "../../assets/upperArrow.svg";
+import { Link } from "react-router-dom";
 
 const tools = [
-  { name: "Dropbox", logo: dropbox },
-  { name: "Shopify", logo: shopify },
-  { name: "Hubspot", logo: hubspot },
-  { name: "Slack", logo: slack },
-  { name: "Intercom", logo: intercom },
-  { name: "Zapier", logo: zapier },
-  { name: "Kickstarter", logo: kickstarter },
-  { name: "Mailchimp", logo: mailchimp },
+  { 
+    name: "Dropbox", 
+    logo: dropbox 
+  },
+  { 
+    name: "Shopify", 
+    logo: shopify 
+  },
+  { 
+    name: "Hubspot", 
+    logo: hubspot 
+  },
+  { 
+    name: "Slack", 
+    logo: slack 
+  },
+  { 
+    name: "Intercom", 
+    logo: intercom 
+  },
+  { 
+    name: "Zapier", 
+    logo: zapier 
+  },
+  { 
+    name: "Kickstarter", 
+    logo: kickstarter 
+  },
+  { 
+    name: "Mailchimp", 
+    logo: mailchimp 
+  },
 ];
 
 const WorkTool = () => {
@@ -30,12 +55,14 @@ const WorkTool = () => {
             <div className={styles.txt}>
           <h2>Works with all your favorite tools</h2>
           </div>
-          <button className={styles.ctaButton}>
+          <Link className={styles.btnLink} to={'https://milestone-webflow-html-website-template.webflow.io/'}>
+          <button className={styles.btn}>
             ALL INTERGRATIONS
             <span className={styles.arrow}>
               <img src={upperArrow} alt="Upper Arrow" />
             </span>
           </button>
+          </Link>
         </div>
         </div>
 

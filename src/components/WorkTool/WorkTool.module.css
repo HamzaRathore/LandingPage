@@ -1,13 +1,13 @@
 .container {
   width: 100%;
-  padding: 80px 20px;
-  background-color: #f8f8f8;
+  padding: 5rem 1.2rem;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .content {
-  max-width: 1200px;
+  max-width: 82.3vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,47 +15,49 @@
 }
 
 .heading {
-  height: 216px;
+  height: 21vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  padding-top: 20px;
+  padding-top: 1.2rem;
 }
+
 .headingContainer {
-  height: 128px;
+  height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .heading h2 {
   font-family: "Sora", sans-serif;
-  font-size: 53.05px;
+  font-size: 3.3rem;
   font-weight: 600;
   color: black;
-
   margin: 0;
   padding: 0;
-  line-height: -1.12px;
+  line-height: 1;
 }
+
 .txt {
-  width: 638px;
-  height: 128px;
-  max-width: 680px;
+  width: 39.8rem;
+  height: 8rem;
+  max-width: 42.5rem;
 }
-.ctaButton {
+
+.btn {
   background-color: #000;
   color: white;
-  height: 64px;
-  width: 285.77px;
-  padding: 20px 32px 20px 48px;
-  border-radius: 36px;
+  height: 4rem;
+  width: 17.8rem;
+  padding: 1.25rem 2rem 1.25rem 3rem;
+  border-radius: 2.25rem;
   font-weight: 700;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
   transition: all 0.3s ease;
   text-transform: uppercase;
   align-self: center;
@@ -63,43 +65,49 @@
   display: flex;
   justify-content: center;
 }
+.btnLink{
+  text-decoration: none;
+}
+
 .arrow {
   filter: brightness(0) invert(1);
 }
+
 .toolGrid {
+  padding-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 2.5rem;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 3.1rem;
 }
 
 .toolItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  padding: 30px;
+  gap: 0.9rem;
+  padding: 1.87rem;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .toolItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.1);
 }
 
 .toolLogo {
-  height: 50px;
+  height: 3.1rem;
   width: auto;
   object-fit: contain;
 }
 
 .toolName {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #555;
 }
@@ -111,25 +119,26 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .toolGrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 1.9rem;
   }
 
   .heading h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
   }
-  .headingContainer{
+
+  .headingContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
   }
+
   .txt {
-    width: 100%; /* Full width for better centering */
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: flex;
@@ -140,15 +149,14 @@
 @media (max-width: 480px) {
   .toolGrid {
     grid-template-columns: 1fr;
-    max-width: 300px;
+    max-width: 18.75rem;
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .container {
-    padding: 60px 15px;
+    padding: 3.75rem 0.93rem;
   }
 }
-
