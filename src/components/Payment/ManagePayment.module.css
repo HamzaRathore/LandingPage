@@ -8,7 +8,7 @@
     transparent
   );
 }
-.wrapper {
+.subcontainer {
   max-width: 69vw;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 20px;
- }
+}
 
 .headBox {
   background: #000;
@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  
 }
 
 .headBox h2 {
@@ -37,7 +36,6 @@
   font-family: "Sora", sans-serif;
   font-weight: 600;
   line-height: 4rem;
- 
 }
 
 .headImg {
@@ -46,7 +44,7 @@
   left: 25px;
 }
 
-.ctaButton {
+.txtButton {
   background-color: #caef45;
   color: #000;
   padding: 1.2rem 2rem 1.2rem 3rem;
@@ -58,13 +56,15 @@
   gap: 5px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  
 }
 
-.ctaButton:hover {
+.txtButton:hover {
   background: #eee;
 }
 
+.btnLink{
+  text-decoration: none;
+}
 .card {
   background: #fff;
   padding: 2rem 1.7rem;
@@ -89,7 +89,6 @@
   font-weight: 400;
   font-size: 1.1em;
   line-height: 28px;
-  
 }
 
 .card:hover {
@@ -102,12 +101,12 @@
   margin-bottom: 1.2em;
 }
 
-.div1,
+/* .div1,
 .div2,
 .div3,
 .div4 {
   border-radius: 22px;
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -130,14 +129,14 @@
     line-height: 2rem;
   }
 
-  .ctaButton {
+  .txtButton {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
   }
 
   .headImg {
     display: none;
-  } 
+  }
 
   .card {
     padding: 1.2rem 0.9rem;
@@ -153,24 +152,21 @@
     line-height: 1.3rem;
   }
   .icon {
-    
     margin-bottom: 0;
   }
   .card {
     padding: 1.3rem;
   }
-  .wrapper {
+  .subcontainer {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0; /* ❌ remove horizontal padding */
+    padding: 0;
     box-sizing: border-box;
   }
-
 }
 
-
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .container {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -181,20 +177,19 @@
       transparent
     );
   }
-  
 
-  .wrapper {
+  .subcontainer {
     padding-left: 0.6rem;
     padding-right: 0.7rem;
   }
-   .headImg {
+  .headImg {
     top: 5.9rem;
     left: 0.9rem;
     width: 1.5rem;
-  } 
+  }
 }
 
-@media (min-width: 774px) { 
+@media (min-width: 774px) {
   .headImg {
     display: block;
   }

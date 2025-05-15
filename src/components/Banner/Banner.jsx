@@ -1,16 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./Banner.module.css";
 import rightArrow from "../../assets/arrow-right-round.png";
 import banner from "../../assets/banner.svg";
-import group from '../../assets/group.svg'
+import group from "../../assets/group.svg";
 import { Link } from "react-router-dom";
 
-
-
 const Banner = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -19,25 +16,31 @@ const Banner = () => {
   }, []);
 
   return (
-    <div  data-aos="fade-up"
-    data-aos-delay="200" className={styles.container}>
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
       <img className={styles.spiral} src={group} alt="group-img" />
       <div className={styles.textBoard}>
         <div className={styles.header}>
           <p className={styles.heading}>
-            Save more and get <span><br /></span>visibility on your money
+            Save more and get{" "}
+            <span>
+              <br />
+            </span>
+            visibility on your money
           </p>
           <p className={styles.subHeading}>
             Know where your spend is going and manage your finances more
             efficiently and Milestone
           </p>
-          <Link className={styles.btnLink} to={'https://milestone-webflow-html-website-template.webflow.io/'}>
-          <button className={styles.btn}>
-            <p>Try it on browser</p>
-            <span>
-              <img src={rightArrow} alt="Arrow" />
-            </span>
-          </button>
+          <Link
+            className={styles.btnLink}
+            to={"https://milestone-webflow-html-website-template.webflow.io/"}
+          >
+            <button className={styles.btn}>
+              <p>Try it on browser</p>
+              <span>
+                <img src={rightArrow} alt="Arrow" />
+              </span>
+            </button>
           </Link>
         </div>
         <div></div>
@@ -46,7 +49,7 @@ const Banner = () => {
       {/* Dashboard image */}
       <div className={styles.DashboardImages}>
         <img className={styles.dashboard} src={banner} alt="dashboard image" />
-        </div>
+      </div>
     </div>
   );
 };

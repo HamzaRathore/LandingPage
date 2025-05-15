@@ -8,29 +8,34 @@ import streamline from "../../assets/payment/streamline.svg";
 import user from "../../assets/payment/user.svg";
 import upperArrow from "../../assets/upperArrow.svg";
 import splash from "../../assets/splash.svg";
+import { Link } from "react-router-dom";
 
 const features = [
   {
     title: "Easy Invoicing",
-    description:"Automate recurring invoices and save time by using pre-built templates. Get paid on time.",
+    description:
+      "Automate recurring invoices and save time by using pre-built templates. Get paid on time.",
     src: user,
     class: "div3",
   },
   {
     title: "Manage expenses",
-    description: "Snap and categorize receipts in seconds and link your bank account.",
+    description:
+      "Snap and categorize receipts in seconds and link your bank account.",
     src: expense,
     class: "div1",
   },
   {
     title: "Streamline payroll",
-    description: "Set up payroll and bonuses for all your employees, and never be late on salaries.",
+    description:
+      "Set up payroll and bonuses for all your employees, and never be late on salaries.",
     src: streamline,
     class: "div2",
   },
   {
     title: "Complete Visibility",
-    description:"Get real-time visibility into every expense and payment, with a neat dashboard.",
+    description:
+      "Get real-time visibility into every expense and payment, with a neat dashboard.",
     src: payroll,
     class: "div4",
   },
@@ -45,16 +50,12 @@ const ManagePayment = () => {
   }, []);
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-delay="200"
-      className={styles.container}
-    >
-      <div className={styles.wrapper}>
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
+      <div className={styles.subcontainer}>
         <img className={styles.headImg} src={splash} />
         <div className={styles.gridLayout}>
           {/* grid1 */}
-          <div className={`${styles.headBox} ${styles.grid1}`}>
+          <div className={styles.headBox}>
             <h2>
               Accounting software that
               <span>
@@ -62,20 +63,22 @@ const ManagePayment = () => {
               </span>
               handles it all.
             </h2>
-            <button className={styles.ctaButton}>
-              SEE ALL FEATURES
-              <span className={styles.arrow}>
-                <img src={upperArrow} alt="Upper Arrow" />
-              </span>
-            </button>
+            <Link
+              className={styles.btnLink}
+              to={"https://milestone-webflow-html-website-template.webflow.io/"}
+            >
+              <button className={styles.txtButton}>
+                SEE ALL FEATURES
+                <span className={styles.arrow}>
+                  <img src={upperArrow} alt="Upper Arrow" />
+                </span>
+              </button>
+            </Link>
           </div>
 
           {/* cards */}
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`${styles.card} ${styles[feature.class]}`}
-            >
+            <div key={index} className={styles.card}>
               <img
                 src={feature.src}
                 alt={feature.title}

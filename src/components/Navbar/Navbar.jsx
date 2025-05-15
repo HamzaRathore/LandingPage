@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      {/* Logo Section */}
+      
       <div className={styles.logo}>
         <img src={logo} alt="Logo" />
       </div>

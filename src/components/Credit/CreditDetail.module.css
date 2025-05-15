@@ -18,6 +18,7 @@
   height: 62vh;
   max-width: 50%;
   overflow: hidden;
+  /* box-shadow: 0 15px 11px -10px rgba(0, 255, 0, 0.3); */
 }
 
 .sec1Img img {
@@ -131,6 +132,7 @@
 }
 
 
+/* Responsiveness */
 @media (max-width: 1024px) {
   .container {
     height: auto;
@@ -195,7 +197,7 @@
   }
 }
 
-/* For large desktop screens  */
+
 @media (min-width: 1440px) {
   .section1,
   .section2 {

@@ -72,16 +72,16 @@ const Footer = () => {
         <div className={styles.section3}>
           <div className={styles.navs}>
             <h2>UTILITY PAGES</h2>
-            <Link to="/">
+            <Link to="/utility">
               <p>Style Right</p>
             </Link>
-            <Link to="/">
+            <Link to="/login">
               <p>Log In</p>
             </Link>
-            <Link to="/">
+            <Link to="/register">
               <p>Register</p>
             </Link>
-            <Link to="/">
+            <Link to="/not-found">
               <p>404 Not Found</p>
             </Link>
           </div>
@@ -92,7 +92,7 @@ const Footer = () => {
             <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
             <p>*Only valuable resource no bullshit</p>
             <div className={styles.emailInput}>
-              <input type="email" placeholder="Enter your e-mail" />
+              <input type="email" placeholder="Enter your e-mail" required />
               <div className={styles.btn}>
                 <button>
                   <img src={right} alt="right" />
