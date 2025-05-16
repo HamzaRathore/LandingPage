@@ -2,50 +2,12 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./CustomerReview.module.css";
-import review1 from "../../assets/cust-review/review1.svg";
-import review2 from "../../assets/cust-review/review2.svg";
-import review3 from "../../assets/cust-review/review3.svg";
-import review4 from "../../assets/cust-review/review4.svg";
 import star from "../../assets/cust-review/rev-star.svg";
 import play from "../../assets/cust-review/play.svg";
 import blueRad from "../../assets/cust-review/blueRad.svg";
 import placeholder from "../../assets/cust-review/Videoplaceholder.svg";
 import greenRadius from "../../assets/greenRadius.svg";
-
-const reviews = [
-  {
-    id: 1,
-    name: "Wade Warren",
-    title: "Founder & CEO, Thunder",
-    src: review1,
-    text: "Milestone helps me keep a clean, organized ledger that I can access anywhere. The UI is so intuitive that anyone can use it, without any knowledge on the system. I also love the financial reports!",
-    videoUrl: "https://www.youtube.com/embed/nm09cQSskn8",
-  },
-  {
-    id: 2,
-    name: "Annette Black",
-    title: "CTO, Poppers",
-    src: review2,
-    text: "We switched to Milestone and immediately saw productivity improvements across our finance team.Milestone makes managing finances incredibly easy.",
-    videoUrl: "https://www.youtube.com/embed/nm09cQSskn8",
-  },
-  {
-    id: 3,
-    name: "Cody Fisher",
-    title: "CFO, MAYABI",
-    src: review3,
-    text: "Milestone makes managing finances incredibly easy. Highly recommended!",
-    videoUrl: "https://www.youtube.com/embed/nm09cQSskn8",
-  },
-  {
-    id: 4,
-    name: "Leslie Alexander",
-    title: "Founder, Pritom",
-    src: review4,
-    text: "We love the automation features and clean UI. It changed the way we handle expenses.Milestone makes managing finances incredibly easy.",
-    videoUrl: "https://www.youtube.com/embed/nm09cQSskn8",
-  },
-];
+import { reviews } from "../../constant/Constant";
 
 const CustomerReview = () => {
   useEffect(() => {

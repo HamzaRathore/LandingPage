@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./Footer.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import facebook from "../../assets/footer/facebook.svg";
 import twitter from "../../assets/footer/twitter.svg";
 import instagram from "../../assets/footer/instagram.svg";

@@ -2,28 +2,9 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./CreditDetail.module.css";
-import credit1 from "../../assets/transaction/credit1.svg";
-import credit2 from "../../assets/transaction/credit2.svg";
-import tick from "../../assets/tick.svg";
+import credit1 from "../../assets/transaction/credit11.png";
 import upperArrow from "../../assets/arrU.svg";
-
-const detail = [
-  {
-    id: 1,
-    src: tick,
-    text: "No hidden fees",
-  },
-  {
-    id: 2,
-    src: tick,
-    text: "100% security. Guaranteed.",
-  },
-  {
-    id: 3,
-    src: tick,
-    text: "No No training or maintenance needed.",
-  },
-];
+import { detail } from "../../constant/Constant";
 
 const CreditDetail = () => {
   useEffect(() => {
@@ -34,9 +15,9 @@ const CreditDetail = () => {
   }, []);
 
   return (
-    <div>
-      <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
-        {/* section 1 */}
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
+      {/* section 1 */}
+      <div className={styles.subcontainer}>
         <div className={styles.section1}>
           <div className={styles.sec1Img}>
             <img src={credit1} alt="credit1" />
@@ -95,8 +76,8 @@ const CreditDetail = () => {
 
           {/* for img */}
 
-          <div className={styles.sec1Img}>
-            <img src={credit2} alt="credit" />
+          <div className={styles.sec2Img}>
+            <img src={credit1} alt="credit" />
           </div>
         </div>
       </div>

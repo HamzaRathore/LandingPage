@@ -1,68 +1,25 @@
 import React, { useEffect } from "react";
 import styles from "./Benefits.module.css";
 import upperArrow from "../../assets/upperArrow.svg";
-import apple from "../../assets/benefits/apple.svg";
-import chrome from "../../assets/benefits/chrome.svg";
-import firefox from "../../assets/benefits/firefox.svg";
-import linux from "../../assets/benefits/linux.svg";
-import microsoft from "../../assets/benefits/microsoft.svg";
-import safari from "../../assets/benefits/safari.svg";
 import spacer from "../../assets/benefits/spacer.svg";
 import tick from "../../assets/benefits/tick.svg";
 import blueRad from "../../assets/cust-review/blueRad.svg";
-import greenRadius from "../../assets/greenRadius.svg";
 import spiral from "../../assets/benefits/spiral.svg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const leftlogo = [
-  {
-    id: 1,
-    logo: apple,
-    name: "maxOS,",
-  },
-  {
-    id: 2,
-    logo: microsoft,
-    name: "WINDOWS,",
-  },
-  {
-    id: 3,
-    logo: linux,
-    name: "LINUX",
-  },
-];
-const rightlogo = [
-  {
-    id: 1,
-    logo: chrome,
-    name: "CHROME,",
-  },
-  {
-    id: 2,
-    logo: safari,
-    name: "SAFARI,",
-  },
-  {
-    id: 3,
-    logo: firefox,
-    name: "&FIREFOX",
-  },
-];
+import { leftlogo, rightlogo } from "../../constant/Constant";
 
 const Benefits = () => {
-
   useEffect(() => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    }, []);
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
-    <div data-aos="fade-up"
-    data-aos-delay="200" className={styles.container}>
+    <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
       <img className={styles.blueradius} src={blueRad} alt="shadow" />
       <img className={styles.spiral} src={spiral} alt="spiral" />
       <div className={styles.subcontainer}>

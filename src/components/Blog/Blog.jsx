@@ -1,39 +1,11 @@
 import React, { useState,useEffect } from "react";
 import styles from "./Blog.module.css";
-import blog1 from "../../assets/blog/blog1.svg";
-import blog2 from "../../assets/blog/blog2.svg";
-import blog3 from "../../assets/blog/blog3.png";
 import upperArrow from "../../assets/arrU.svg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {blogs} from '../../constant/Constant'
 
-const blogs = [
-  {
-    id: 1,
-    title: "The worst advice we've ever heard about web design",
-    desc: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking overpas is important",
-    src: blog1,
-    type: "BUSINESS",
-    time: ". 8 MIN READ",
-  },
-  {
-    id: 2,
-    title: "The History Of Web Design",
-    desc: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking overpas is important",
-    src: blog2,
-    type: "MARKETING",
-    time: ". 8 MIN READ",
-  },
-  {
-    id: 3,
-    title: "10 Things Nobody Told You About Being a Web Designer",
-    desc: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking overpas is important",
-    src: blog3,
-    type: "PRODUCT",
-    time: ". 8 MIN READ",
-  },
-];
 
 function Blog() {
   useEffect(() => {

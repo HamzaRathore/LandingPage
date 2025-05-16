@@ -5,30 +5,7 @@ import styles from "./Analysis.module.css";
 import star from '../../assets/analysis/star.svg'
 import spiral from '../../assets/analysis/spiral.svg'
 import analysisGradient from '../../assets/analysis/analysisGradient.svg'
-
-
-const steps = [
-    {
-      id: 1,
-      title: 'Analyze',
-      description: 'Scan invoices, automate data-entry and route approvals, effortlessly, automatically.',
-    },
-    {
-      id: 2,
-      title: 'Tracking Expenses',
-      description: "Gather information about your business, it's structure, goal and policies",
-    },
-    {
-      id: 3,
-      title: 'Send payments',
-      description: 'Make global payments and get paid in any currency in 24h.',
-    },
-    {
-      id: 4,
-      title: 'Analyse cashflow',
-      description: 'Get real-time insights and forecasts on your finances.',
-    },
-  ];
+import {steps} from '../../constant/Constant'
   
    const Analysis = () => {
      useEffect(() => {
@@ -42,7 +19,6 @@ const steps = [
   
     return (
        <section data-aos="fade-up" data-aos-delay="200" className={styles.container}>
-    
         <img src={analysisGradient} alt="glow" className={styles.glow} />
         <img src={spiral} alt="spiral" className={styles.spiral} />
         <img src={star} alt="star" className={styles.star} />

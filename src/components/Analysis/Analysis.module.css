@@ -18,8 +18,8 @@
   
   .spiral {
     position: absolute;
-    left: 10.6rem;
-    bottom: 10.5rem;
+    left: 9%;
+    bottom: 30%;
     width: 8.5vw;
     height: 22.9vh;
   }
@@ -35,7 +35,7 @@
   .heading {
      
     text-align: left;
-    padding-left: 7.5rem;
+    padding-left: 8.9rem;
     padding-bottom: 5.5rem;
     line-height: 3.7rem;
    
@@ -58,7 +58,7 @@
   }
   
   .card {
-    background: #1a1a1a;
+    background: #121212;
     display: flex;
     flex-direction: column;
     padding: 1.9rem 1.2rem;
@@ -75,7 +75,7 @@
   .card h3 {
     font-size: 1.1em;
     width: 100%;
-    margin-top: 3.7em;
+    margin-top: 2.7em;
     transform: rotate(90deg);
     font-family: 'Inter', sans-serif;
     font-weight: 400; 

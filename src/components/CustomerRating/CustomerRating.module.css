@@ -12,7 +12,7 @@
 }
 
 .textContainer h2 {
-  font-size: 4em;
+  font-size: 3.2em;
   font-weight: 600;
   line-height: 8.3vh;
   font-family: "Sora", sans-serif;
@@ -33,8 +33,9 @@
 
 .stars {
   color: #ffa500;
-  font-size: 4em;
+  font-size: 2em;
   padding-top: 1rem;
+  margin: 0;
 }
 
 .quote {
@@ -44,13 +45,20 @@
   line-height: 1.52vh;
   font-weight: 400;
   font-size: 0.9em;
+  margin: 0%;
 }
-
+.logoWrapper {
+  height: 2.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo {
   height: 5.8vh;
   width: 15.7vw;
   object-fit: contain;
   max-width: 318.3px;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -81,15 +89,55 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 3rem 1.2rem;
+  }
+
+  .textContainer {
+    margin-bottom: 2rem;
+  }
+
   .textContainer h2 {
-    font-size: 2em;
+    font-size: 1.6em;
+    line-height: 1.4em;
+  }
+
+  .reviewWrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
   }
 
   .reviewItem {
-    width: 80vw;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.08);
+  }
+
+  .stars {
+    font-size: 1.8em;
+    padding-top: 0.5rem;
+  }
+
+  .quote {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 1rem 0;
+    color: #333;
+  }
+
+  .logoWrapper {
+    height: 2.2rem;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .logo {
-    width: 70vw;
+    max-height: 100%;
+    max-width: 70%;
+    width: auto;
+    height: auto;
   }
 }
+

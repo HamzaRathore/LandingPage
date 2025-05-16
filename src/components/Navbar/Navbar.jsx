@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import cart from "../../assets/cart.svg";
 import rightArrow from "../../assets/arrow-right-round.png";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       
-      <div className={styles.logo}>
+      <div className={styles.logo} >
         <img src={logo} alt="Logo" />
       </div>
 

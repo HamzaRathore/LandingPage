@@ -54,7 +54,7 @@ const ManagePayment = () => {
       <div className={styles.subcontainer}>
         <img className={styles.headImg} src={splash} />
         <div className={styles.gridLayout}>
-          {/* grid1 */}
+          {/* box1 */}
           <div className={styles.headBox}>
             <h2>
               Accounting software that

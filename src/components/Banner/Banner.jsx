@@ -17,9 +17,10 @@ const Banner = () => {
 
   return (
     <div data-aos="fade-up" data-aos-delay="200" className={styles.container}>
-      <img className={styles.spiral} src={group} alt="group-img" />
+      
       <div className={styles.textBoard}>
         <div className={styles.header}>
+        <img className={styles.spiral} src={group} alt="group-img" />
           <p className={styles.heading}>
             Save more and get{" "}
             <span>
@@ -43,7 +44,6 @@ const Banner = () => {
             </button>
           </Link>
         </div>
-        <div></div>
       </div>
 
       {/* Dashboard image */}
